@@ -12,6 +12,7 @@ jobs:
       - name: Ping HuggingFace Space
         run: |
           # 请将下面的 URL 改为你的 HuggingFace Space 地址
-          curl -s -o /dev/null -w "%{http_code}" https://huggingface.co/spaces/kkppppp123/gpt-image || true          
+          curl -s -o /dev/null -w "%{http_code}" https://huggingface.co/spaces/kkppppp123/gpt-image || true   
+          curl -s -o /dev/null -w "%{http_code}" https://kkppppp123-gpt-image.hf.space || true
       - name: Log status
         run: echo "Keep-alive ping sent at $(date)"
